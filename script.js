@@ -216,12 +216,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /**
  * Handle download resume clicks
  */
-document.querySelectorAll('a[href$="resume.pdf"]').forEach(link => {
+document.querySelectorAll('a[href$="Profile.pdf"]').forEach(link => {
     link.addEventListener('click', function(e) {
         // If PDF doesn't exist, show notification
-        if (!this.getAttribute('href').includes('resume.pdf')) {
+        if (!this.getAttribute('href').includes('Profile.pdf')) {
             e.preventDefault();
-            showNotification('Please add your resume PDF to the assets folder', 'info');
+            showNotification('Please add your updated resume PDF to the assets folder', 'info');
         }
     });
 });
